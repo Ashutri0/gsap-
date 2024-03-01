@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>970x250</title>
+    <meta name="ad.size" content="width=300,height=600">
+    <link rel="stylesheet" href="css/banner.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script type="text/javascript">
+        var clickTag = "#";
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"> <a href="javascript:window.open(window.clickTag)">
+        <div class="wrapper">
+            <div class="wave"></div>
+            <div class="waveII"></div>
+          </div>
+            <div id="leftbig"><img src="leftree.png" alt="left-bg-white" /></div>
+            <div id="leftsmall"><img src="leftreesmall.png" alt="left-bg-red" /></div>
+            <div id="rightbig"><img src="righttree.png" alt="Right-bg-big" /></div>
+            <div id="rightsmall"><img src="righttreesmall.png" alt="right-small" /></div>
+            <div id="starlft"><img src="star.png" alt="star-left" /></div>
+            <div id="starryt"><img src="star2.png" alt="Star-right" /></div>
+            <div id="starthree"><img src="star2.png" alt="starthree" /></div>
+            <div id="logo"><img src="egplus-color-logo.png" alt="magnon-logo" /></div>
+            <div id="gift"><img src="gift1.png" alt="gift" /></div>
+            <div id="giftII"><img src="gift2.png" alt="gift" /></div>
+            <div id="marrychristmas"><img src="marry.png" alt="marry-christmas" /></div>
+        </a>
+
+
+    </div>
+    <script>
+        
+        var tl = new TimelineMax({repeat: -1, repeatDelay: 2});
+        tl
+            .to(leftbig, 0.9, { x: 9, ease:"power2", repeat:6, yoyo: true },"-=6")
+            .to(leftsmall, 0.9, { x: -9, ease:"power2", repeat:6, yoyo: true }, "-=6")
+            .to([rightbig], 0.9, { x: -9, ease:"pow er2", repeat:6, yoyo: true }, "-=6")
+            .to([rightsmall], 0.9, { x: 9, ease:"power2", repeat:6, yoyo: true }, "-=6")
+            .to([starlft],1, { top: -125 },"-=5")
+            .to([starryt],1, { top: -140 },"-=6")
+            .to([starthree],1, { top: -95 },"-=6")
+            .to(logo, 0.7, { top: 5 },"2")
+            .to(gift, 0.7, { rotate: 0 }, "3")
+            .to(giftII, 0.7, { rotate: 0 }, "3")
+            .to(marrychristmas, 0.7, { opacity: 1 , scale: 1.8}, "3")
+
+    </script>
+</body>
+
+</html>
